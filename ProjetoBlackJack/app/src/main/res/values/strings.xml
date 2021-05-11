@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProjetoBlackJack</string>
+    <string name="aviso_cadastro">Preencha todos os campos!</string>
+    <string name="voltar">bt_voltar</string>
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#499338"
+    android:backgroundTint="#8BC34A">
+
+    <ImageView
+        android:id="@+id/carta1_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card1" />
+
+    <ImageView
+        android:id="@+id/carta6_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card6" />
+
+    <ImageView
+        android:id="@+id/carta5_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card5" />
+
+    <ImageView
+        android:id="@+id/carta2_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card2" />
+
+    <ImageView
+        android:id="@+id/carta7_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card7" />
+
+    <ImageView
+        android:id="@+id/carta3_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card3" />
+
+    <ImageView
+        android:id="@+id/carta4_computador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card4" />
+
+    <ImageView
+        android:id="@+id/carta_reserva"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardcostas" />
+
+    <TextView
+        android:id="@+id/valor_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar" />
+
+    <TextView
+        android:id="@+id/titulo_placar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
+        android:text="Seu placar"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pontuacao_vitoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#090909"
+        app:layout_constraintStart_toEndOf="@+id/titulo_placar_vitoria"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_placar" />
+
+    <TextView
+        android:id="@+id/titulo_placar_derrota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="92dp"
+        android:text="derrotas"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_placar_vitoria" />
+
+    <TextView
+        android:id="@+id/potuacao_derrota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="#090909"
+        app:layout_constraintStart_toEndOf="@+id/titulo_placar_derrota"
+        app:layout_constraintTop_toBottomOf="@+id/pontuacao_vitoria" />
+
+    <TextView
+        android:id="@+id/titulo_placar_vitoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:text="vitórias"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_placar" />
+
+    <Button
+        android:id="@+id/bt_inicar_jogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="224dp"
+        android:onClick="comecar_jogo"
+        android:text="Iniciar jogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="268dp"
+        android:onClick="comprar_carta"
+        android:text="Comprar"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_inicar_jogo" />
+
+    <Button
+        android:id="@+id/bt_parar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="terminar_turno"
+        android:text="Parar"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/bt_comprar"
+        app:layout_constraintTop_toBottomOf="@+id/bt_inicar_jogo" />
+
+    <TextView
+        android:id="@+id/valor_computador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="192dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/carta5_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card5" />
+
+    <ImageView
+        android:id="@+id/carta4_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card4" />
+
+    <ImageView
+        android:id="@+id/carta3_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card3" />
+
+    <ImageView
+        android:id="@+id/carta2_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card2" />
+
+    <ImageView
+        android:id="@+id/carta1_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card1" />
+
+    <ImageView
+        android:id="@+id/carta6_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card6" />
+
+    <ImageView
+        android:id="@+id/carta7_jogador"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="56dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_comprar"
+        app:srcCompat="@drawable/card7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
